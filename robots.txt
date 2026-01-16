@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://oleksiizozulenko.github.io/pages-cms-site-tst/sitemap.xml

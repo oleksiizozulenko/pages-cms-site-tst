@@ -1,0 +1,113 @@
+[
+    {
+        "name": "Main",
+        "position": "mainMenu",
+        "items": [
+            {
+                "id": 1768587760697,
+                "label": "Про нас",
+                "title": "",
+                "type": "page",
+                "target": "_self",
+                "rel": "",
+                "link": 14,
+                "cssClass": "",
+                "isHidden": false,
+                "items": [
+                    {
+                        "id": 1768580666903,
+                        "label": "Історія інституту",
+                        "title": "",
+                        "type": "page",
+                        "target": "_self",
+                        "rel": "",
+                        "link": 6,
+                        "cssClass": "",
+                        "isHidden": false,
+                        "items": []
+                    },
+                    {
+                        "id": 1768581020898,
+                        "label": "Статут",
+                        "title": "",
+                        "type": "page",
+                        "target": "_self",
+                        "rel": "",
+                        "link": 10,
+                        "cssClass": "",
+                        "isHidden": false,
+                        "items": []
+                    },
+                    {
+                        "id": 1768581031460,
+                        "label": "Стратегія розвитку",
+                        "title": "",
+                        "type": "page",
+                        "target": "_self",
+                        "rel": "",
+                        "link": 11,
+                        "cssClass": "",
+                        "isHidden": false,
+                        "items": []
+                    },
+                    {
+                        "id": 1768581048289,
+                        "label": "Основні результати",
+                        "title": "",
+                        "type": "page",
+                        "target": "_self",
+                        "rel": "",
+                        "link": 12,
+                        "cssClass": "",
+                        "isHidden": false,
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "id": 1768589817397,
+                "label": "Новини",
+                "title": "",
+                "type": "page",
+                "target": "_self",
+                "rel": "",
+                "link": 15,
+                "cssClass": "",
+                "isHidden": false,
+                "items": []
+            },
+            {
+                "id": 1768589959024,
+                "label": "Освітньо-наукова діяльність",
+                "title": "",
+                "type": "page",
+                "target": "_self",
+                "rel": "",
+                "link": 17,
+                "cssClass": "",
+                "isHidden": false,
+                "items": []
+            }
+        ],
+        "maxLevels": "-1"
+    },
+    {
+        "name": "LocaleSwitch",
+        "position": "",
+        "items": [
+            {
+                "id": 1768588286945,
+                "label": "ua",
+                "title": "",
+                "type": "internal",
+                "target": "_self",
+                "rel": "",
+                "link": "l/ua/",
+                "cssClass": "",
+                "isHidden": false,
+                "items": []
+            }
+        ],
+        "maxLevels": ""
+    }
+]
