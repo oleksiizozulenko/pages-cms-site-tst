@@ -1,0 +1,14 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "PubliiTest",
+    "description": "",
+    "home_page_url": "https://oleksiizozulenko.github.io/pages-cms-site-tst",
+    "feed_url": "https://oleksiizozulenko.github.io/pages-cms-site-tst/feed.json",
+    "user_comment": "",
+    "icon": "https://oleksiizozulenko.github.io/pages-cms-site-tst/media/website/nanu2.png",
+    "author": {
+        "name": "Oleksii"
+    },
+    "items": [
+    ]
+}
