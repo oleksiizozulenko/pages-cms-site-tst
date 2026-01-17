@@ -1,5 +1,26 @@
 <!DOCTYPE html>
-<html lang="{{ @website.language }}">
+{{#checkIfAny @config.page @config.post}}
+	{{#checkIf @config.page.langpage '==' 0 }}
+	    <html lang="en-GB">
+	{{/checkIf}}
+	{{#checkIf @config.page.langpage '==' 1 }}
+	    <html lang="be-BY">
+	{{/checkIf}}
+	{{#checkIf @config.page.langpage '==' 2 }}
+	    <html lang="es-ES">
+	{{/checkIf}}
+	{{#checkIf @config.post.langpage '==' 0 }}
+	    <html lang="en-GB">
+	{{/checkIf}}
+	{{#checkIf @config.post.langpage '==' 1 }}
+	    <html lang="be-BY">
+	{{/checkIf}}
+	{{#checkIf @config.post.langpage '==' 2 }}
+	    <html lang="es-ES">
+	{{/checkIf}}
+{{else}}
+   <html lang="{{@website.language}}">
+{{/checkIfAny}}
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +31,7 @@
             <title>{{@website.name}}</title>
         {{/if}}
         {{metaDescription}}
-        {{metaRobots}} 
+        {{metaRobots}}
         {{{publiiHead}}}
         {{canonicalLink}}
         {{feedLink}}
@@ -35,7 +56,7 @@
                     opacity: 1;
                 }
             </style>
-        </noscript>	
+        </noscript>
         {{{@headCustomCode}}}
     </head>
     <body class="{{#is "index"}}home-template{{/is}}{{#is "index-pagination"}} pagination-template{{/is}}{{#is "blogindex"}}blogindex-template{{/is}}{{#is "tag"}}tag-template{{/is}}{{#is "tag-pagination"}} pagination-template{{/is}}{{#is "tags"}}tags-template{{/is}}{{#is "page"}}page-template{{/is}}{{#is "post"}}post-template{{/is}}{{#is "author"}}author-template{{/is}}{{#is "author-pagination"}} pagination-template{{/is}}{{#is "404"}}error-template{{/is}}{{#is "search"}}search-template{{/is}}">

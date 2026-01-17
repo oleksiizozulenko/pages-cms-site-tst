@@ -13,9 +13,44 @@
    {{/if}}
    </div>
    <div>
- {{#if menus.mainMenu}}
-      {{> menu menus.mainMenu}}
-   {{/if}}
+ {{#checkIf @config.page.langpage '==' 0 }}
+      {{#if menus.mainMenu}}
+            {{> menu menus.mainMenu}}
+      {{/if}}
+      {{/checkIf}}
+
+      {{#checkIf @config.page.langpage '==' 1 }}
+      {{#if menus.mainByMenu}}
+            {{> menu menus.mainByMenu}}
+      {{/if}}
+      {{/checkIf}}
+
+
+      {{#checkIf @config.page.langpage '==' 2 }}
+      {{#if menus.mainSpMenu}}
+            {{> menu menus.mainSpMenu}}
+      {{/if}}
+      {{/checkIf}}
+
+
+      {{#checkIf @config.post.langpage '==' 0 }}
+      {{#if menus.mainMenu}}
+            {{> menu menus.mainMenu}}
+      {{/if}}
+      {{/checkIf}}
+
+      {{#checkIf @config.post.langpage '==' 1 }}
+      {{#if menus.mainByMenu}}
+            {{> menu menus.mainByMenu}}
+      {{/if}}
+      {{/checkIf}}
+
+
+      {{#checkIf @config.post.langpage '==' 2 }}
+      {{#if menus.mainSpainMenu}}
+            {{> menu menus.mainSpMenu}}
+      {{/if}}
+      {{/checkIf}}
    </div>
 
 </header>

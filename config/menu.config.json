@@ -109,5 +109,24 @@
             }
         ],
         "maxLevels": ""
+    },
+    {
+        "name": "msa",
+        "position": "mainByMenu",
+        "items": [
+            {
+                "id": 1768641700388,
+                "label": "sp-fsdfdsafs",
+                "title": "",
+                "type": "post",
+                "target": "_self",
+                "rel": "",
+                "link": 20,
+                "cssClass": "",
+                "isHidden": false,
+                "items": []
+            }
+        ],
+        "maxLevels": "-1"
     }
 ]

@@ -1,5 +1,5 @@
 {
-    "name": "InMech Theme",
+    "name": "InMech-Theme",
     "version": "3.2.0.0",
     "author": "Oleksii Zozulenko <ozozulenko@gmail.com>",
     "menus": {
@@ -11,6 +11,26 @@
         "footerMenu": {
             "desc": "",
             "name": "Footer menu",
+            "maxLevels": 1
+        },
+        "mainSpainMenu": {
+            "desc": "",
+            "name": "Main Spain menu",
+            "maxLevels": -1
+        },
+        "footerSpainMenu": {
+            "desc": "",
+            "name": "Footer Spain menu",
+            "maxLevels": 1
+        },
+        "mainByMenu": {
+            "desc": "",
+            "name": "Main BY menu",
+            "maxLevels": -1
+        },
+        "footerByMenu": {
+            "desc": "",
+            "name": "Footer BY menu",
             "maxLevels": 1
         }
     },
@@ -2155,6 +2175,26 @@
     ],
     "postConfig": [
         {
+	"name": "langpage",
+	"label": "Language",
+	"value": 0,
+	"type": "select",
+	"options": [
+		{
+			"label": "Spanish",
+			"value": 2
+		},
+		{
+			"label": "Belarusian",
+			"value": 1
+		},
+		{
+			"label": "English",
+			"value": 0
+		}
+	]
+},
+        {
             "name": "displayDate",
             "label": "Display date",
             "value": 1,
@@ -2300,6 +2340,26 @@
         }
     ],
     "pageConfig": [
+        {
+	"name": "langpage",
+	"label": "Language",
+	"value": 0,
+	"type": "select",
+	"options": [
+		{
+			"label": "Spanish",
+			"value": 2
+		},
+		{
+			"label": "Belarusian",
+			"value": 1
+		},
+		{
+			"label": "English",
+			"value": 0
+		}
+	]
+},
         {
             "name": "displayDate",
             "label": "Display date",
