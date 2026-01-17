@@ -1,14 +1,16 @@
 {{> head}}
 {{> navbar}}
 <main>
-
+<div id="main" class="cf">
+<section id="content"><div class="oms_definition">
    <div class="wrapper feed">
       {{#each posts}}
          {{> post-card this}}
       {{/each}}
       {{> pagination}}
    </div>
-
+</div></section>
 <div>{{> sidebar}}</div>
+</div>
 </main>
 {{> footer}}
