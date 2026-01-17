@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 {{#checkIfAny @config.page @config.post}}
 	{{#checkIf @config.page.langpage '==' 0 }}
-	    <html lang="en-GB">
+	    <html lang="en-US">
 	{{/checkIf}}
 	{{#checkIf @config.page.langpage '==' 1 }}
-	    <html lang="be-BY">
+	    <html lang="uk-UA">
 	{{/checkIf}}
-	{{#checkIf @config.page.langpage '==' 2 }}
-	    <html lang="es-ES">
-	{{/checkIf}}
+
 	{{#checkIf @config.post.langpage '==' 0 }}
-	    <html lang="en-GB">
+	    <html lang="en-US">
 	{{/checkIf}}
 	{{#checkIf @config.post.langpage '==' 1 }}
-	    <html lang="be-BY">
+	    <html lang="uk-UA">
 	{{/checkIf}}
-	{{#checkIf @config.post.langpage '==' 2 }}
-	    <html lang="es-ES">
-	{{/checkIf}}
+
 {{else}}
    <html lang="{{@website.language}}">
 {{/checkIfAny}}

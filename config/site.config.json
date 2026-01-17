@@ -6,11 +6,11 @@
     "synced": "synced",
     "logo": {
         "color": 1,
-        "icon": "web-pizza"
+        "icon": "web-cpu"
     },
     "domain": "https://oleksiizozulenko.github.io/pages-cms-site-tst",
     "language": "uk",
-    "spellchecking": false,
+    "spellchecking": true,
     "advanced": {
         "cssCompression": 1,
         "htmlCompression": 1,
@@ -29,10 +29,10 @@
         "sitemapAddExternalImages": true,
         "sitemapExcludedFiles": "",
         "usePageTitleInsteadItemName": false,
-        "openGraphEnabled": 1,
+        "openGraphEnabled": false,
         "openGraphImage": "",
         "openGraphAppId": "",
-        "twitterCardsEnabled": 1,
+        "twitterCardsEnabled": false,
         "twitterCardsType": "summary",
         "twitterUsername": "",
         "metaTitle": "%sitename",
@@ -80,16 +80,16 @@
         "featuredPostsListingOrder": "DESC",
         "hiddenPostsListingOrderBy": "created_at",
         "hiddenPostsListingOrder": "DESC",
-        "usePageAsFrontpage": false,
-        "pageAsFrontpage": 0,
+        "usePageAsFrontpage": true,
+        "pageAsFrontpage": 15,
         "feed": {
             "title": "displayName",
             "titleValue": "",
             "showFullText": 1,
             "numberOfPosts": 10,
             "showFeaturedImage": 1,
-            "enableRss": 1,
-            "enableJson": 1,
+            "enableRss": false,
+            "enableJson": false,
             "updatedDateType": "createdAt",
             "showOnlyFeatured": 0,
             "excludeFeatured": 0
@@ -243,5 +243,5 @@
         }
     },
     "theme": "inmech-theme",
-    "syncDate": 1768642214701
+    "syncDate": 1768655753901
 }

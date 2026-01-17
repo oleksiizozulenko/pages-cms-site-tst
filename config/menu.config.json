@@ -92,36 +92,29 @@
         "maxLevels": "-1"
     },
     {
-        "name": "LocaleSwitch",
-        "position": "",
-        "items": [
-            {
-                "id": 1768588286945,
-                "label": "ua",
-                "title": "",
-                "type": "internal",
-                "target": "_self",
-                "rel": "",
-                "link": "l/ua/",
-                "cssClass": "",
-                "isHidden": false,
-                "items": []
-            }
-        ],
-        "maxLevels": ""
-    },
-    {
-        "name": "msa",
+        "name": "Main-En",
         "position": "mainByMenu",
         "items": [
             {
-                "id": 1768641700388,
-                "label": "sp-fsdfdsafs",
+                "id": 1768654556081,
+                "label": "About",
                 "title": "",
-                "type": "post",
+                "type": "page",
                 "target": "_self",
                 "rel": "",
-                "link": 20,
+                "link": 22,
+                "cssClass": "",
+                "isHidden": false,
+                "items": []
+            },
+            {
+                "id": 1768654566740,
+                "label": "Strategy",
+                "title": "",
+                "type": "page",
+                "target": "_self",
+                "rel": "",
+                "link": 21,
                 "cssClass": "",
                 "isHidden": false,
                 "items": []

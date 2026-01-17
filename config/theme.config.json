@@ -7,6 +7,8 @@
         "logo": "media/website/nanu2.png"
     },
     "customConfig": {
+        "brandName": "Інститут механіки ім. С.П. Тимошенка НАН України",
+        "brandNameEn": "S.P.Timoshenko Institute of Mechanics",
         "pageMargin": "6vw",
         "pageWidth": "66rem",
         "entryWidth": "42rem",
@@ -22,11 +24,11 @@
         "alignFeed": "center",
         "feedFeaturedImage": false,
         "feedFeaturedImageSize": "8",
-        "feedAvatar": true,
-        "feedAuthor": true,
+        "feedAvatar": false,
+        "feedAuthor": false,
         "feedDate": true,
         "feedDateType": "published",
-        "feedtReadMore": true,
+        "feedtReadMore": false,
         "navbarHeight": "6rem",
         "submenu": "auto",
         "submenuWidth": "240",
@@ -68,7 +70,7 @@
         "socialVimeo": "",
         "socialPinterest": "",
         "socialYoutube": "",
-        "copyrightText": "",
+        "copyrightText": "<p>Powered by Publii</p>",
         "searchFeature": false,
         "createSearchPage": false,
         "galleryItemGap": "calc(var(--baseline) * 1.5)",
@@ -82,19 +84,19 @@
         "fontHeadingsItalic": false
     },
     "postConfig": {
-        "langpage": "2",
+        "langpage": "1",
         "displayDate": 1,
-        "displayAuthor": 1,
-        "displayLastUpdatedDate": 1,
-        "displayTags": 1,
-        "displayShareButtons": 1,
-        "displayAuthorBio": 1,
+        "displayAuthor": "1",
+        "displayLastUpdatedDate": "0",
+        "displayTags": "1",
+        "displayShareButtons": "0",
+        "displayAuthorBio": "0",
         "displayPostNavigation": 1,
-        "displayRelatedPosts": 1,
+        "displayRelatedPosts": "0",
         "displayComments": 0
     },
     "pageConfig": {
-        "langpage": 0,
+        "langpage": "1",
         "displayDate": 0,
         "displayAuthor": 0,
         "displayLastUpdatedDate": 0,
@@ -104,9 +106,9 @@
         "displayComments": 0
     },
     "tagConfig": {
-        "displayFeaturedImage": 1,
+        "displayFeaturedImage": "0",
         "displayPostCounter": 1,
-        "displayDescription": 1,
+        "displayDescription": "0",
         "displayPostList": 1
     },
     "authorConfig": {
