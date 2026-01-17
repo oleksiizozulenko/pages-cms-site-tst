@@ -1,6 +1,7 @@
 {{> head}}
 {{> navbar}}
 <main class="post">
+   <section id="content"><div class="oms_definition">
    {{#post}}
       <article class="content">
          <div class="hero {{#checkIfNone featuredImage.url}}hero--noimage{{/checkIfNone}}">
@@ -335,6 +336,7 @@
       {{/if}}
 
    {{/post}}
+   </div></section>
 
    <div>{{> sidebar}}</div>
 </main>

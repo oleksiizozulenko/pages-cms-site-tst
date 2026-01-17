@@ -1,6 +1,7 @@
 {{> head}}
 {{> navbar}}
 <main class="posts">
+   <section id="content"><div class="oms_definition">
    <div class="hero hero--noimage">
       <header class="hero__content {{#checkIf @config.custom.alignHero '==' "center" }}hero__content--centered{{/checkIf}}">
          <div class="wrapper">
@@ -108,6 +109,7 @@
       {{/each}}
       {{> pagination}}
    </div>
+   </div></section>
 
    <div>{{> sidebar}}</div>
 </main>

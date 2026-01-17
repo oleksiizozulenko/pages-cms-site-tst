@@ -18,6 +18,11 @@ header ul{list-style: none;list-style-type: none;}
 header li{border-bottom: 1px solid #E0E0E0;margin-right:10px;}
 header h3,header span{font-size:2em;font-weight:bolder;padding:10px 0;}
 header h3,header span, .nav_top td{}
+header.js-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 header span{font-size:1em;}
 header li{padding: 5px 0;}
 
@@ -46,6 +51,15 @@ ol.sp_zirka li.zirka:before, ol.sp_zirka1 li.zirka:before, ol.sp_zirka2 li.zirka
 .nav_top td:last-child{border:0px;}
 .main_i{border: 2px solid #ddddee;border-radius: 15px;margin-top: 8px;width:700px;float: left;}
 /*aside{border: 2px solid #ddddee;border-radius: 15px;margin-top: 8px;margin-bottom: 8px;width:265px;margin-left: 705px;}*/
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 2em;
+}
+
 #main {width: 100%;display:block;}
 #content {display: block;vertical-align: top;padding: 0;background-color: #FFFFFF;}
 aside {width: 100%;background-color: #FFFFFF;display: block;vertical-align: top;padding: 0px 0px 0px 5px;}
