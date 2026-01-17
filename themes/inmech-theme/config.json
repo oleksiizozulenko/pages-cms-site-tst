@@ -22,6 +22,11 @@
       "desc": "",
       "name": "Footer English menu",
       "maxLevels": 1
+    },
+    "asideMenu": {
+      "desc": "",
+      "name": "Aside menu",
+      "maxLevels": 1
     }
   },
   "renderer": {
