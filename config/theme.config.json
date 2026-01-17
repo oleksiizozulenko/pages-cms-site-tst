@@ -29,7 +29,7 @@
         "feedDate": true,
         "feedDateType": "published",
         "feedtReadMore": false,
-        "navbarHeight": "6rem",
+        "navbarHeight": "auto",
         "submenu": "auto",
         "submenuWidth": "240",
         "mobilemenu": "sidebar",

@@ -52,6 +52,12 @@ ol.sp_zirka li.zirka:before, ol.sp_zirka1 li.zirka:before, ol.sp_zirka2 li.zirka
 .main_i{border: 2px solid #ddddee;border-radius: 15px;margin-top: 8px;width:700px;float: left;}
 /*aside{border: 2px solid #ddddee;border-radius: 15px;margin-top: 8px;margin-bottom: 8px;width:265px;margin-left: 705px;}*/
 
+.top__brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 main {
   display: flex;
   flex-direction: row;
@@ -61,7 +67,8 @@ main {
 }
 
 #main {width: 100%;display:block;}
-#content {display: block;vertical-align: top;padding: 0;background-color: #FFFFFF;}
+
+#content {width: 1000%; display: block;vertical-align: top;padding: 0;background-color: #FFFFFF;}
 aside {width: 100%;background-color: #FFFFFF;display: block;vertical-align: top;padding: 0px 0px 0px 5px;}
 
 *:after {-webkit-box-sizing: inherit;-moz-box-sizing: inherit;box-sizing: inherit;}
