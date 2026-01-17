@@ -4,9 +4,11 @@
 
    <div class="wrapper feed">
       {{#each posts}}
-         {{> post-card post=this}}
+         {{> post-card this}}
       {{/each}}
       {{> pagination}}
    </div>
+
+<div>{{> sidebar}}</div>
 </main>
 {{> footer}}

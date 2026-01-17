@@ -12,12 +12,12 @@
                         {{#if @config.post.displayAuthor}}
                            {{#author}}
                               {{#if avatar}}
-                                 <img 
-                                    src="{{avatarImage.url}}" 
+                                 <img
+                                    src="{{avatarImage.url}}"
                                     {{ lazyload "eager" }}
                                     height="{{avatarImage.height}}"
                                     width="{{avatarImage.width}}"
-                                    class="feed__author-thumb" 
+                                    class="feed__author-thumb"
                                     alt="">
                               {{/if}}
                               <a href="{{url}}" class="feed__author">{{name}}</a>
@@ -40,11 +40,11 @@
 
             {{#featuredImage}}
                {{#if url}}
-                  <figure class="hero__image">  
-                     <div class="hero__image-wrapper">                    
+                  <figure class="hero__image">
+                     <div class="hero__image-wrapper">
                         <img
                            src="{{url}}"
-                           {{#if @config.site.responsiveImages}}                           
+                           {{#if @config.site.responsiveImages}}
                               {{responsiveImageAttributes 'featuredImage' srcset.hero sizes.hero}}
                            {{/if}}
                            {{ lazyload "eager" }}
@@ -52,20 +52,20 @@
                            width="{{width}}"
                            alt="{{alt}}">
                         </div>
-                      
+
                      {{#checkIfAny caption credits}}
                         <figcaption>
                            {{caption}}
                            {{credits}}
-                        </figcaption>                      
-                     {{/checkIfAny}}                      
+                        </figcaption>
+                     {{/checkIfAny}}
                   </figure>
                {{/if}}
-            {{/featuredImage}}     
+            {{/featuredImage}}
          </div>
 
-         <div class="entry-wrapper content__entry">           
-            {{{text}}}            
+         <div class="entry-wrapper content__entry">
+            {{{text}}}
          </div>
 
          {{#checkIfAny @config.post.displayLastUpdatedDate @config.post.displayTags @config.post.displayShareButtons @config.post.displayAuthorBio @config.post.displayPostNavigation}}
@@ -103,7 +103,7 @@
                               <button class="btn--icon content__share-button js-content__share-button">
                                  <svg width="20" height="20" aria-hidden="true">
                                        <use xlink:href="{{@website.assetsUrl}}/svg/svg-map.svg#share"></use>
-                                 </svg> 
+                                 </svg>
                                  <span>{{ translate 'post.shareIt' }}</span>
                               </button>
                               {{#checkIfAll @plugins.socialSharing @plugins.socialSharing.state}}
@@ -114,8 +114,8 @@
                                  <div class="content__share-popup js-content__share-popup">
                                     {{> share-buttons}}
                                  </div>
-                              {{/checkIfAll}}   
-                           </div>       
+                              {{/checkIfAll}}
+                           </div>
                         {{/if}}
                      </div>
                   {{/checkIfAny}}
@@ -123,14 +123,14 @@
                   {{#if @config.post.displayAuthorBio}}
                      <div class="content__bio bio">
                         {{#author}}
-                           {{#if avatar}}                          
-                              <img 
-                                 src="{{avatarImage.url}}" 
+                           {{#if avatar}}
+                              <img
+                                 src="{{avatarImage.url}}"
                                  {{ lazyload "lazy" }}
                                  height="{{avatarImage.height}}"
-                                 width="{{avatarImage.width}}" 
-                                 class="bio__avatar" 
-                                 alt="">                          
+                                 width="{{avatarImage.width}}"
+                                 class="bio__avatar"
+                                 alt="">
                            {{/if}}
                            <div>
                               <h3 class="h4 bio__name">
@@ -156,20 +156,20 @@
                                  <div class="content__nav-prev">
                                     <a href="{{url}}" class="content__nav-link" rel="prev">
                                        {{#featuredImage}}
-                                          {{#if url}} 
+                                          {{#if url}}
                                              <figure class="content__nav-image">
-                                                <img 
+                                                <img
                                                    {{#if @config.site.responsiveImages}}
                                                       src="{{urlXs}}"
                                                    {{else}}
                                                       src="{{url}}"
                                                    {{/if}}
                                                    class="lazyload"
-                                                   {{ lazyload "lazy" }} 
-                                                   alt="{{alt}}" 
-                                                   height="{{height}}" 
+                                                   {{ lazyload "lazy" }}
+                                                   alt="{{alt}}"
+                                                   height="{{height}}"
                                                    width="{{height}}">
-                                              </figure>                    
+                                              </figure>
                                           {{/if}}
                                        {{/featuredImage}}
                                        <div>
@@ -187,20 +187,20 @@
                                           {{title}}
                                        </div>
                                        {{#featuredImage}}
-                                          {{#if url}} 
+                                          {{#if url}}
                                              <figure class="content__nav-image">
-                                                <img 
+                                                <img
                                                    {{#if @config.site.responsiveImages}}
                                                       src="{{urlXs}}"
                                                    {{else}}
                                                       src="{{url}}"
                                                    {{/if}}
                                                    class="lazyload"
-                                                   {{ lazyload "lazy" }} 
-                                                   alt="{{alt}}" 
-                                                   height="{{height}}" 
+                                                   {{ lazyload "lazy" }}
+                                                   alt="{{alt}}"
+                                                   height="{{height}}"
                                                    width="{{height}}">
-                                              </figure>                    
+                                              </figure>
                                           {{/if}}
                                        {{/featuredImage}}
                                     </a>
@@ -258,19 +258,19 @@
                                           {{#if avatar}}
                                              {{#if @config.custom.feedAuthor}}
                                                 <img
-                                                   src="{{avatarImage.url}}" 
+                                                   src="{{avatarImage.url}}"
                                                    {{ lazyload "lazy" }}
                                                    height="{{avatarImage.height}}"
-                                                   width="{{avatarImage.width}}"      
+                                                   width="{{avatarImage.width}}"
                                                    class="feed__author-thumb"
                                                    alt="">
                                              {{else}}
                                                 <a href="{{url}}" class="feed__author-link">
                                                    <img
-                                                      src="{{avatarImage.url}}" 
+                                                      src="{{avatarImage.url}}"
                                                       {{ lazyload "lazy" }}
                                                       height="{{avatarImage.height}}"
-                                                      width="{{avatarImage.width}}"      
+                                                      width="{{avatarImage.width}}"
                                                       class="feed__author-thumb"
                                                       alt="{{avatarImage.alt}}">
                                                 </a>
@@ -308,7 +308,7 @@
                                     {{title}}
                                  </a>
                               </h3>
-                           </header>               
+                           </header>
                            {{#if hasCustomExcerpt}}
                               {{{ excerpt }}}
                            {{else}}
@@ -335,5 +335,7 @@
       {{/if}}
 
    {{/post}}
+
+   <div>{{> sidebar}}</div>
 </main>
 {{> footer}}

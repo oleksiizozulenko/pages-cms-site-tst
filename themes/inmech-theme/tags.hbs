@@ -5,7 +5,7 @@
       <header class="hero__content {{#checkIf @config.custom.alignHero '==' "center" }}hero__content--centered{{/checkIf}}">
          <div class="wrapper">
             <h1>
-               {{ translate 'tags.tagsPageTitle' }} 
+               {{ translate 'tags.tagsPageTitle' }}
             </h1>
             <p class="page__desc">
                {{ translate "tags.description" tagsNumber }}
@@ -48,5 +48,7 @@
          {{/each}}
       </ul>
    </div>
+
+   <div>{{> sidebar}}</div>
 </main>
 {{> footer}}

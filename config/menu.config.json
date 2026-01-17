@@ -93,7 +93,7 @@
     },
     {
         "name": "Main-En",
-        "position": "mainByMenu",
+        "position": "mainEnMenu",
         "items": [
             {
                 "id": 1768654556081,
@@ -121,5 +121,72 @@
             }
         ],
         "maxLevels": "-1"
+    },
+    {
+        "name": "AsideMenu",
+        "position": "asideMenu",
+        "items": [
+            {
+                "id": 1768666373308,
+                "label": "Журнал «Прикладна механіка»",
+                "title": "",
+                "type": "external",
+                "target": "_self",
+                "rel": "",
+                "link": "https://pm.inmech.kyiv.ua/",
+                "cssClass": "",
+                "isHidden": false,
+                "items": []
+            },
+            {
+                "id": 1768666423732,
+                "label": "Календар подій",
+                "title": "",
+                "type": "page",
+                "target": "_self",
+                "rel": "",
+                "link": 24,
+                "cssClass": "",
+                "isHidden": false,
+                "items": []
+            },
+            {
+                "id": 1768666510699,
+                "label": "Конференції",
+                "title": "",
+                "type": "page",
+                "target": "_self",
+                "rel": "",
+                "link": 25,
+                "cssClass": "",
+                "isHidden": false,
+                "items": []
+            },
+            {
+                "id": 1768666535818,
+                "label": "Національний комітет України з теоретичної і прикладної механіки",
+                "title": "",
+                "type": "external",
+                "target": "_self",
+                "rel": "",
+                "link": "https://natcommmech.inmech.kyiv.ua/",
+                "cssClass": "",
+                "isHidden": false,
+                "items": []
+            },
+            {
+                "id": 1768666554741,
+                "label": "Гранти та конкурси",
+                "title": "",
+                "type": "external",
+                "target": "_self",
+                "rel": "",
+                "link": "https://grants.inmech.kyiv.ua/",
+                "cssClass": "",
+                "isHidden": false,
+                "items": []
+            }
+        ],
+        "maxLevels": "1"
     }
 ]

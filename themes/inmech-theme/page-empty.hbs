@@ -12,30 +12,30 @@
 
             {{#featuredImage}}
                {{#if url}}
-                  <figure class="hero__image">                      
+                  <figure class="hero__image">
                      <img
                         src="{{url}}"
-                        {{#if @config.site.responsiveImages}}                           
+                        {{#if @config.site.responsiveImages}}
                             {{responsiveImageAttributes 'featuredImage' srcset.hero sizes.hero}}
                         {{/if}}
                         {{ lazyload "eager" }}
                         height="{{height}}"
                         width="{{width}}"
                         alt="{{alt}}">
-                      
+
                      {{#checkIfAny caption credits}}
                         <figcaption>
                            {{caption}}
                            {{credits}}
-                        </figcaption>                      
-                     {{/checkIfAny}}                      
+                        </figcaption>
+                     {{/checkIfAny}}
                   </figure>
                {{/if}}
-            {{/featuredImage}}     
+            {{/featuredImage}}
          </div>
 
-         <div class="wrapper content__entry content__entry--nospace">           
-            {{{text}}}            
+         <div class="wrapper content__entry content__entry--nospace">
+            {{{text}}}
          </div>
 
          {{#if @config.page.displayChildPages}}
@@ -61,5 +61,7 @@
       {{/if}}
 
    {{/page}}
+
+   <div>{{> sidebar}}</div>
 </main>
 {{> footer}}

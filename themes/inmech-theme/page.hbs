@@ -12,12 +12,12 @@
                         {{#if @config.page.displayAuthor}}
                            {{#author}}
                               {{#if avatar}}
-                                 <img 
-                                    src="{{avatarImage.url}}" 
+                                 <img
+                                    src="{{avatarImage.url}}"
                                     {{ lazyload "eager" }}
                                     height="{{avatarImage.height}}"
                                     width="{{avatarImage.width}}"
-                                    class="feed__author-thumb" 
+                                    class="feed__author-thumb"
                                     alt="">
                               {{/if}}
                               <a href="{{url}}" class="feed__author">{{name}}</a>
@@ -40,11 +40,11 @@
 
             {{#featuredImage}}
                {{#if url}}
-                  <figure class="hero__image"> 
-                     <div class="hero__image-wrapper">                     
+                  <figure class="hero__image">
+                     <div class="hero__image-wrapper">
                         <img
                            src="{{url}}"
-                           {{#if @config.site.responsiveImages}}                           
+                           {{#if @config.site.responsiveImages}}
                               {{responsiveImageAttributes 'featuredImage' srcset.hero sizes.hero}}
                            {{/if}}
                            {{ lazyload "eager" }}
@@ -52,20 +52,20 @@
                            width="{{width}}"
                            alt="{{alt}}">
                         </div>
-                      
+
                      {{#checkIfAny caption credits}}
                         <figcaption>
                            {{caption}}
                            {{credits}}
-                        </figcaption>                      
-                     {{/checkIfAny}}                      
+                        </figcaption>
+                     {{/checkIfAny}}
                   </figure>
                {{/if}}
-            {{/featuredImage}}     
+            {{/featuredImage}}
          </div>
 
-         <div class="entry-wrapper content__entry">           
-            {{{text}}}            
+         <div class="entry-wrapper content__entry">
+            {{{text}}}
          </div>
 
          {{#checkIfAny @config.page.displayLastUpdatedDate @config.page.displayShareButtons @config.page.displayAuthorBio}}
@@ -92,7 +92,7 @@
                               <button class="btn--icon content__share-button js-content__share-button">
                                  <svg width="20" height="20" aria-hidden="true">
                                        <use xlink:href="{{@website.assetsUrl}}/svg/svg-map.svg#share"></use>
-                                 </svg> 
+                                 </svg>
                                  <span>{{ translate 'post.shareIt' }}</span>
                               </button>
                               {{#checkIfAll @plugins.socialSharing @plugins.socialSharing.state}}
@@ -103,8 +103,8 @@
                                  <div class="content__share-popup js-content__share-popup">
                                     {{> share-buttons}}
                                  </div>
-                              {{/checkIfAll}}   
-                           </div>       
+                              {{/checkIfAll}}
+                           </div>
                         {{/if}}
                      </div>
                   {{/checkIfAny}}
@@ -112,14 +112,14 @@
                   {{#if @config.page.displayAuthorBio}}
                      <div class="content__bio bio">
                         {{#author}}
-                           {{#if avatar}}                          
-                              <img 
-                                 src="{{avatarImage.url}}" 
+                           {{#if avatar}}
+                              <img
+                                 src="{{avatarImage.url}}"
                                  {{ lazyload "lazy" }}
                                  height="{{avatarImage.height}}"
-                                 width="{{avatarImage.width}}" 
-                                 class="bio__avatar" 
-                                 alt="">                          
+                                 width="{{avatarImage.width}}"
+                                 class="bio__avatar"
+                                 alt="">
                            {{/if}}
                            <div>
                               <h3 class="h4 bio__name">
@@ -169,5 +169,7 @@
       {{/if}}
 
    {{/page}}
+
+   <div>{{> sidebar}}</div>
 </main>
 {{> footer}}

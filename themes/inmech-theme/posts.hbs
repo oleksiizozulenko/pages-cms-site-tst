@@ -5,7 +5,7 @@
       <header class="hero__content {{#checkIf @config.custom.alignHero '==' "center" }}hero__content--centered{{/checkIf}}">
          <div class="wrapper">
             <h1>
-               {{ translate 'postPrefix.title' }} 
+               {{ translate 'postPrefix.title' }}
             </h1>
             <p class="page__desc">
                {{ translate "postPrefix.description" }}
@@ -42,19 +42,19 @@
                               {{#if avatar}}
                                  {{#if @config.custom.feedAuthor}}
                                     <img
-                                       src="{{avatarImage.url}}" 
+                                       src="{{avatarImage.url}}"
                                        {{ lazyload "lazy" }}
                                        height="{{avatarImage.height}}"
-                                       width="{{avatarImage.width}}"      
+                                       width="{{avatarImage.width}}"
                                        class="feed__author-thumb"
                                        alt="">
                                  {{else}}
                                     <a href="{{url}}" class="feed__author-link">
                                        <img
-                                          src="{{avatarImage.url}}" 
+                                          src="{{avatarImage.url}}"
                                           {{ lazyload "lazy" }}
                                           height="{{avatarImage.height}}"
-                                          width="{{avatarImage.width}}"      
+                                          width="{{avatarImage.width}}"
                                           class="feed__author-thumb"
                                           alt="{{avatarImage.alt}}">
                                     </a>
@@ -93,7 +93,7 @@
                         {{title}}
                      </a>
                   </h2>
-               </header>               
+               </header>
                {{#if hasCustomExcerpt}}
                   {{{ excerpt }}}
                {{else}}
@@ -108,5 +108,7 @@
       {{/each}}
       {{> pagination}}
    </div>
+
+   <div>{{> sidebar}}</div>
 </main>
 {{> footer}}
