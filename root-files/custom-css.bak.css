@@ -147,7 +147,7 @@ aside {width: 100%;background-color: #FFFFFF;display: block;vertical-align: top;
 	  border-bottom-left-radius: 0px;
 	  border-bottom-right-radius: 0px;
 	}
-		
+
   .nav-links {
     margin:0;
     padding:0;
@@ -269,7 +269,7 @@ ul.dropdown-inside {
 
 .dropdown .dropdown-inside { background: #fff; }
 .dropdown .dropdown-inside a:hover { background: #efefef; }
- 
+
  /*@media only screen and (max-width: 768px) {
 body {width: 100%;}
 form, fieldset {float: none !important;}
@@ -287,8 +287,8 @@ a:hover{text-decoration:underline;color:#600060;}
 .res_blok,.link_blok{border:2px solid #eeeeee;border-radius:15px;background-color:#eeeeee;margin-top:1em;margin-bottom:1em;clear:both;padding:0px;}
 .link_blok a{display: block;padding: 0.1em 0.7em 0.1em 2em;overflow: hidden;border-top: 1px solid #f0f0f0;border-bottom: 1px solid #d3d3d3;font-weight: bold;text-decoration: none;text-overflow: ellipsis;text-shadow: 0 1px 0 #f9f9f9;color: #444444;}
 .link_blok a:hover{text-decoration: none;color: #444444;}
-.link_blok a:nth-child(n){background:#e0e0e0;} 
-.link_blok a:nth-child(2n){background:#eeeeee;} 
+.link_blok a:nth-child(n){background:#e0e0e0;}
+.link_blok a:nth-child(2n){background:#eeeeee;}
 .link_blok a:first-child {border-top-left-radius: 10px;border-top-right-radius: 10px;padding: 0.1em 0.7em 0.1em 1em;color:#ffffff;background-color:#000000;text-shadow: 0 1px 0 #000000;}
 .link_blok a:first-child:hover{text-decoration: none;color: #ffffff;}
 .link_blok a:last-child {border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;border-bottom: 0;}
@@ -327,32 +327,32 @@ mo[form="infix"], * + mo{padding:0 0.3ex;}
 mo[form="prefix"]{padding:0 0 0 0.5ex;}
 mo[form="postfix"]{padding:0 0.5ex 0 0;}
 mo[fence="true"], mo[separator="true"]{padding:0;}
-mi[mathvariant="bold"], mi[mathvariant="bold-italic"], mi[mathvariant="bold-sans-serif"], 
-mi[mathvariant="sans-serif-bold-italic"],mn[mathvariant="bold"], mn[mathvariant="bold-italic"], 
-mn[mathvariant="bold-sans-serif"], mn[mathvariant="sans-serif-bold-italic"],mo[mathvariant="bold"], 
+mi[mathvariant="bold"], mi[mathvariant="bold-italic"], mi[mathvariant="bold-sans-serif"],
+mi[mathvariant="sans-serif-bold-italic"],mn[mathvariant="bold"], mn[mathvariant="bold-italic"],
+mn[mathvariant="bold-sans-serif"], mn[mathvariant="sans-serif-bold-italic"],mo[mathvariant="bold"],
 mo[mathvariant="bold-italic"], mo[mathvariant="bold-sans-serif"], mo[mathvariant="sans-serif-bold-italic"],
-ms[mathvariant="bold"], ms[mathvariant="bold-italic"], ms[mathvariant="bold-sans-serif"], 
-ms[mathvariant="sans-serif-bold-italic"],mtext[mathvariant="bold"], mtext[mathvariant="bold-italic"], 
+ms[mathvariant="bold"], ms[mathvariant="bold-italic"], ms[mathvariant="bold-sans-serif"],
+ms[mathvariant="sans-serif-bold-italic"],mtext[mathvariant="bold"], mtext[mathvariant="bold-italic"],
 mtext[mathvariant="bold-sans-serif"], mtext[mathvariant="sans-serif-bold-italic"]{font-weight:bold;font-style:normal;}
-mi[mathvariant="monospace"], mn[mathvariant="monospace"],mo[mathvariant="monospace"], 
+mi[mathvariant="monospace"], mn[mathvariant="monospace"],mo[mathvariant="monospace"],
 ms[mathvariant="monospace"],mtext[mathvariant="monospace"]{font-family:monospace;font-style:normal;}
-mi[mathvariant="sans-serif"], mi[mathvariant="bold-sans-serif"], mi[mathvariant="bold-sans-serif"], 
+mi[mathvariant="sans-serif"], mi[mathvariant="bold-sans-serif"], mi[mathvariant="bold-sans-serif"],
 mi[mathvariant="sans-serif-italic"], mi[mathvariant="sans-serif-bold-italic"],mn[mathvariant="bold-sans-serif"],
 mn[mathvariant="sans-serif"], mn[mathvariant="bold-sans-serif"], mn[mathvariant="sans-serif-italic"],
-mn[mathvariant="sans-serif-bold-italic"], mo[mathvariant="sans-serif"], mo[mathvariant="bold-sans-serif"], 
-mo[mathvariant="bold-sans-serif"], mo[mathvariant="sans-serif-italic"], mo[mathvariant="sans-serif-bold-italic"], 
-ms[mathvariant="sans-serif"], ms[mathvariant="bold-sans-serif"], ms[mathvariant="bold-sans-serif"], 
-ms[mathvariant="sans-serif-italic"], ms[mathvariant="sans-serif-bold-italic"], mtext[mathvariant="sans-serif"], 
-mtext[mathvariant="bold-sans-serif"], mtext[mathvariant="bold-sans-serif"], mtext[mathvariant="sans-serif-italic"], 
+mn[mathvariant="sans-serif-bold-italic"], mo[mathvariant="sans-serif"], mo[mathvariant="bold-sans-serif"],
+mo[mathvariant="bold-sans-serif"], mo[mathvariant="sans-serif-italic"], mo[mathvariant="sans-serif-bold-italic"],
+ms[mathvariant="sans-serif"], ms[mathvariant="bold-sans-serif"], ms[mathvariant="bold-sans-serif"],
+ms[mathvariant="sans-serif-italic"], ms[mathvariant="sans-serif-bold-italic"], mtext[mathvariant="sans-serif"],
+mtext[mathvariant="bold-sans-serif"], mtext[mathvariant="bold-sans-serif"], mtext[mathvariant="sans-serif-italic"],
 mtext[mathvariant="sans-serif-bold-italic"]{font-family:sans-serif;font-style:normal;}
-mi, mi[mathvariant="italic"], mi[mathvariant="bold-italic"],mi[mathvariant="sans-serif-italic"], 
+mi, mi[mathvariant="italic"], mi[mathvariant="bold-italic"],mi[mathvariant="sans-serif-italic"],
 mi[mathvariant="sans-serif-bold-italic"],mn[mathvariant="italic"], mn[mathvariant="bold-italic"],
-mn[mathvariant="sans-serif-italic"], mn[mathvariant="sans-serif-bold-italic"],mo[mathvariant="italic"], 
+mn[mathvariant="sans-serif-italic"], mn[mathvariant="sans-serif-bold-italic"],mo[mathvariant="italic"],
 mo[mathvariant="bold-italic"],mo[mathvariant="sans-serif-italic"], mo[mathvariant="sans-serif-bold-italic"],
-ms[mathvariant="italic"], ms[mathvariant="bold-italic"],ms[mathvariant="sans-serif-italic"], 
+ms[mathvariant="italic"], ms[mathvariant="bold-italic"],ms[mathvariant="sans-serif-italic"],
 ms[mathvariant="sans-serif-bold-italic"],mtext[mathvariant="italic"], mtext[mathvariant="bold-italic"],
 mtext[mathvariant="sans-serif-italic"], mtext[mathvariant="sans-serif-bold-italic"]{font-style:italic;}
-mi[mathvariant="normal"], mn[mathvariant="normal"], mo[mathvariant="normal"], 
+mi[mathvariant="normal"], mn[mathvariant="normal"], mo[mathvariant="normal"],
 ms[mathvariant="normal"], mtext[mathvariant="normal"]{font-style:normal;}
 ms:before, ms:after {content:"\0022"}
 
@@ -413,7 +413,7 @@ ol.vr li span:first-child{width:250px;}
 .in_300{width:150px;display: table-cell;}
 
 a.pm_button{text-decoration: none;    cursor: pointer;}
-a.pm_button button{text-decoration: ncursor: pointer;}
+a.pm_button button{text-decoration: none; cursor: pointer;}
 
 .postgraduate_menu{background-color: #4f8e7d;border-radius: 1em;background-image: linear-gradient(#4f8e7d,#4b6061 90%);padding: 4px 1em;text-align:center;color: #91ccb8;text-shadow: #000000 1px 0px, #000000 1px 1px, #000000 0px 1px, #000000 -1px 1px, #000000 -1px 0px, #000000 -1px -1px, #000000 0px -1px, #000000 1px -1px, #000000 0 0 3px, #000000 0 0 3px, #000000 0 0 3px, #000000 0 0 3px, #000000 0 0 3px, #000000 0 0 3px, #000000 0 0 3px, #000000 0 0 3px;text-decoration:none;}
 .postgraduate_menu_info{border: 2px solid #ddddee; border-radius:15px; background-color:#f0f0f0; padding:10px; margin: 0 0 10px 0;}
