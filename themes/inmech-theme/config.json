@@ -62,7 +62,8 @@
     "postsPage": true
   },
   "pageTemplates": {
-    "empty": "Empty container"
+    "empty": "Empty container",
+    "news": "News page"
   },
   "config": [
     {

@@ -1,14 +1,14 @@
 <header class="top js-header">
    <div class="top__brand">
-      <a class="logo" href="{{@website.url}}">
-         {{#if @website.logo}}
-         <img src="{{@website.logo}}" alt="{{@website.name}}" width="{{@website.logoSize.width}}"
-            height="{{@website.logoSize.height}}">
-         {{else}}
-         {{@website.name}}
-         {{/if}}
-      </a>
-      <h1 class="sr-only">
+      <div style="padding: 1em 0;"><a class="logo" href="{{@website.url}}">
+            {{#if @website.logo}}
+            <img src="{{@website.logo}}" alt="{{@website.name}}" width="{{@website.logoSize.width}}"
+               height="{{@website.logoSize.height}}">
+            {{else}}
+            {{@website.name}}
+            {{/if}}
+         </a></div>
+      <div class="brand-name inst_header">
          {{#checkIf @config.page.langpage '==' 1 }}
          {{#if @config.custom.brandName}}
          {{ @config.custom.brandName }}
@@ -21,15 +21,18 @@
          {{/if}}
          {{/checkIf}}
 
-      </h1>
-
-      <div class="nav-toggle js-nav-toggle" aria-label="Toggle navigation" aria-expanded="false" role="button"
-         tabindex="0">
-         <span class="nav-toggle__bar">UA</span>
-         <span class="nav-toggle__bar">EN</span>
       </div>
+
+
+      <div class="p_lang_lock">
+         <ul>
+            <li><a class="icon_ua" hreflang="uk" href="{{@website.baseUrl}}l/ua/index.html">&nbsp;Українська</a></li>
+            <li><a class="icon_en" hreflang="en-US" href="{{@website.baseUrl}}l/en/index.html">&nbsp;English</a></li>
+         </ul>
+      </div>
+
    </div>
-   <div>
+   <div style="width: 100%; display: flex; justify-content: flex-start; align-items: center;">
       {{#checkIf @config.page.langpage '==' 1 }}
       {{#if menus.mainMenu}}
       {{> menu menus.mainMenu}}

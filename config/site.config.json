@@ -97,7 +97,7 @@
         "urls": {
             "cleanUrls": true,
             "addIndex": false,
-            "postsPrefix": "",
+            "postsPrefix": "news",
             "tagsPrefix": "tags",
             "tagsPrefixAfterPostsPrefix": false,
             "authorsPrefix": "authors",
@@ -243,5 +243,5 @@
         }
     },
     "theme": "inmech-theme",
-    "syncDate": 1768677692564
+    "syncDate": 1768850383535
 }

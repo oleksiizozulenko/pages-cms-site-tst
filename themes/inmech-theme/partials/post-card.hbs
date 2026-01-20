@@ -1,3 +1,4 @@
+{{#getPost id}}
 <article class="feed__item {{#checkIf @config.custom.alignFeed '==' " center" }}feed__item--centered{{/checkIf}}">
     {{#if @config.custom.feedFeaturedImage}}
     {{#featuredImage}}
@@ -71,3 +72,4 @@
         {{/if}}
     </div>
 </article>
+{{/getPost}}

@@ -1,0 +1,128 @@
+{{> head}}
+{{> navbar}}
+<main class="page posts-page">
+   <section id="content">
+      <div class="oms_definition">
+         {{#page}}
+         <div class="content">
+
+            <div class="wrapper content__entry content__entry--nospace">
+               {{{text}}}
+            </div>
+
+
+            {{#if @config.page.displayChildPages}}
+            {{#if subpages}}
+            <div class="subpages">
+               <div class="wrapper">
+                  <h2 class="h6 subpages__title">{{ translate 'page.childPages' }}</h2>
+                  <ul class="subpages__list">
+                     {{> subpages-list}}
+                  </ul>
+               </div>
+            </div>
+            {{/if}}
+            {{/if}}
+         </div>
+
+         {{#if @customHTML.afterPage}}
+         <div class="banner banner--after-content">
+            <div class="wrapper">
+               {{{@customHTML.afterPage}}}
+            </div>
+         </div>
+         {{/if}}
+
+         {{/page}}
+
+          <div class="wrapper feed">
+
+         {{#each @website.contentStructure.posts}}
+         <article class="inmech_news feed__item {{#checkIf @config.custom.alignFeed '==' " center"
+            }}feed__item--centered{{/checkIf}}">
+
+            <div class="feed__content">
+
+
+                  <h2 class="feed__title">
+                     <a href="{{url}}">
+                        {{title}}
+                     </a>
+                  </h2>
+
+               {{#if hasCustomExcerpt}}
+               {{{ excerpt }}}
+               {{else}}
+               <p>{{{ text }}}</p>
+               {{/if}}
+               {{#if @config.custom.feedtReadMore}}
+               <a href="{{url}}" class="readmore feed__readmore">
+                  {{ translate 'post.readMore' }}</a>
+               {{/if}}
+
+               {{#checkIfAny @config.custom.feedAvatar @config.custom.feedAuthor @config.custom.feedDate}}
+                  <div class="feed__meta">
+                     {{#author}}
+                     {{#if @config.custom.feedAvatar}}
+                     {{#if avatar}}
+                     {{#if @config.custom.feedAuthor}}
+                     <img src="{{avatarImage.url}}" {{ lazyload "lazy" }} height="{{avatarImage.height}}"
+                        width="{{avatarImage.width}}" class="feed__author-thumb" alt="">
+                     {{else}}
+                     <a href="{{url}}" class="feed__author-link">
+                        <img src="{{avatarImage.url}}" {{ lazyload "lazy" }} height="{{avatarImage.height}}"
+                           width="{{avatarImage.width}}" class="feed__author-thumb" alt="{{avatarImage.alt}}">
+                     </a>
+                     {{/if}}
+                     {{/if}}
+                     {{/if}}
+                     {{#if @config.custom.feedAuthor}}
+                     <a href="{{url}}" class="feed__author">{{name}}</a>
+                     {{/if}}
+                     {{/author}}
+
+                     {{#if @config.custom.feedDate}}
+                     {{#checkIf @config.custom.feedDateType '==' "published" }}
+                     <time datetime="{{date createdAt 'YYYY-MM-DDTHH:mm'}}" class="feed__date">
+                        {{#checkIf @config.custom.formatDate '!=' 'custom'}}
+                        {{date createdAt @config.custom.formatDate}}
+                        {{else}}
+                        {{date createdAt @config.custom.formatDateCustom}}
+                        {{/checkIf}}
+                     </time>
+                     {{/checkIf}}
+                     {{#checkIf @config.custom.feedDateType '==' "modified" }}
+                     <time datetime="{{date modifiedAt 'YYYY-MM-DDTHH:mm'}}" class="feed__date">
+                        {{#checkIf @config.custom.formatDate '!=' 'custom'}}
+                        {{date modifiedAt @config.custom.formatDate}}
+                        {{else}}
+                        {{date modifiedAt @config.custom.formatDateCustom}}
+                        {{/checkIf}}
+                     </time>
+                     {{/checkIf}}
+                     {{/if}}
+                  </div>
+                  {{/checkIfAny}}
+            </div>
+         </article>
+         {{/each}}
+         {{> pagination}}
+      </div>
+
+      <div class="tags">
+         {{#each @website.contentStructure.tags}}
+         <span class="tag">
+            <a href="{{url}}" class="tag__link">{{name}}</a>
+         </span>
+
+         {{/each}}
+      </div>
+      </div>
+
+
+   </section>
+
+
+   <div>{{> sidebar}}</div>
+</main>
+{{> footer}}

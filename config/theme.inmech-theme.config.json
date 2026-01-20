@@ -9,11 +9,11 @@
     "customConfig": {
         "brandName": "Інститут механіки ім. С.П. Тимошенка НАН України",
         "brandNameEn": "S.P.Timoshenko Institute of Mechanics",
-        "pageMargin": "6vw",
-        "pageWidth": "66rem",
+        "pageMargin": "1rem",
+        "pageWidth": "100%",
         "entryWidth": "42rem",
         "borderRadius": "3",
-        "baseline": "0.28333rem",
+        "baseline": "0",
         "alignHero": "left",
         "textHero": "<h1>Discover My Blogging Journey: Adventures, Travels, and Hobbies!</h1>\n<p>Join me as I share captivating stories, travel experiences, and dive into the joys of my favorite hobbies.</p>\n<p><a href=\"#\" class=\"btn\">Read more</a></p>",
         "heightHero": "50vh",
@@ -70,13 +70,13 @@
         "socialVimeo": "",
         "socialPinterest": "",
         "socialYoutube": "",
-        "copyrightText": "<p>Powered by Publii</p>",
+        "copyrightText": "Powered by Publii",
         "searchFeature": false,
         "createSearchPage": false,
         "galleryItemGap": "calc(var(--baseline) * 1.5)",
         "backToTopButton": true,
-        "formatDate": "MMMM D, YYYY",
-        "formatDateCustom": "HH:mm:ss YY/MM/DD",
+        "formatDate": "custom",
+        "formatDateCustom": "YYYY-MM-DD",
         "lazyLoadEffect": "fadein",
         "faviconUpload": "",
         "faviconExtension": "image/x-icon",
@@ -121,6 +121,6 @@
     },
     "defaultTemplates": {
         "post": "",
-        "page": ""
+        "page": "empty"
     }
 }
