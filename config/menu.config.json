@@ -65,16 +65,41 @@
                 ]
             },
             {
-                "id": 1768589817397,
-                "label": "Новини",
+                "id": 1769153954908,
+                "label": "Структура",
                 "title": "",
                 "type": "page",
                 "target": "_self",
                 "rel": "",
-                "link": 15,
+                "link": 37,
                 "cssClass": "",
                 "isHidden": false,
-                "items": []
+                "items": [
+                    {
+                        "id": 1769153990119,
+                        "label": "Дирекція",
+                        "title": "",
+                        "type": "page",
+                        "target": "_self",
+                        "rel": "",
+                        "link": 38,
+                        "cssClass": "",
+                        "isHidden": false,
+                        "items": []
+                    },
+                    {
+                        "id": 1769154027917,
+                        "label": "Наукові відділи",
+                        "title": "",
+                        "type": "page",
+                        "target": "_self",
+                        "rel": "",
+                        "link": 39,
+                        "cssClass": "",
+                        "isHidden": false,
+                        "items": []
+                    }
+                ]
             },
             {
                 "id": 1768589959024,
@@ -84,6 +109,55 @@
                 "target": "_self",
                 "rel": "",
                 "link": 17,
+                "cssClass": "",
+                "isHidden": false,
+                "items": [
+                    {
+                        "id": 1769153641343,
+                        "label": "Аспірантура",
+                        "title": "",
+                        "type": "page",
+                        "target": "_self",
+                        "rel": "",
+                        "link": 32,
+                        "cssClass": "",
+                        "isHidden": false,
+                        "items": []
+                    },
+                    {
+                        "id": 1769153652432,
+                        "label": "Докторантура",
+                        "title": "",
+                        "type": "page",
+                        "target": "_self",
+                        "rel": "",
+                        "link": 33,
+                        "cssClass": "",
+                        "isHidden": false,
+                        "items": []
+                    },
+                    {
+                        "id": 1769153661377,
+                        "label": "Захист дисертацій",
+                        "title": "",
+                        "type": "page",
+                        "target": "_self",
+                        "rel": "",
+                        "link": 34,
+                        "cssClass": "",
+                        "isHidden": false,
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "id": 1768589817397,
+                "label": "Новини",
+                "title": "",
+                "type": "page",
+                "target": "_self",
+                "rel": "",
+                "link": 15,
                 "cssClass": "",
                 "isHidden": false,
                 "items": []
